@@ -43,7 +43,7 @@ export default function Header() {
     >
       <Divider />
       <List>
-        {['Home ','Press', 'Photos', 'Music', 'About Me', 'Contact'].map((text, index) => (
+        {['Home ','Press', 'Gallery', 'Discography', 'About Me', 'Contact'].map((text, index) => (
           <div key={text}>
         <Divider className={styles.divider}/>
           <ListItem disablePadding>
@@ -86,13 +86,13 @@ export default function Header() {
             <>
                   <div className={styles.container}>
                         <div className={styles.logoContainer}>
-                              <img src={logo} alt="logo" />
+                              <div>Weiser</div>
                         </div>
                         <div className={styles.linkContainer}>
                               <div>Home</div>
                               <div>Press</div>
-                              <div>Photos</div>
-                              <div>Music</div>
+                              <div>Gallery</div>
+                              <div>Discography</div>
                               <div>About Me</div>
                               <div>Contact</div>
                         </div>

@@ -8,6 +8,7 @@
       display: flex;
       align-items: center;
       padding-left: 4%;
+      z-index: 999;
       padding-right: 4%;
       font-size: 1em;
       font-weight: bold;
@@ -20,6 +21,16 @@
       align-items: center;
       justify-content: center;
 }
+.logoContainer div{
+      margin-left: 3vw;
+      cursor: pointer;
+}
+.logoContainer div:hover{
+      margin-left: 3vw;
+      cursor: pointer;
+      scale: 1.06;
+}
+
 
 .logoContainer img {
       width: 50px;

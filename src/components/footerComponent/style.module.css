@@ -22,12 +22,16 @@
       margin: 10px auto;
 }
 .linkContainer > div >input{
-      outline: none;
+      outline: none !important;
       padding: 5px;
       background-color: var(--bg-primary);
       color: var(--color-secondary);
       border-radius: 4px;
+      
       margin-top: 4px;
+}
+input:active{
+      border: 1px solid !important;
 }
 .linkContainer > button{
       outline: none;

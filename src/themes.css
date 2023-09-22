@@ -1,9 +1,9 @@
 :root{
-      --bg-primary: black;
+      --bg-primary: #121212;
       --bg-secondary: blue;
-      --color-primary: white;
+      --color-primary: #626262;
       --color-secondary: rgb(150, 148, 148);
-      --red: red;
+      --red: #b6b6b6;
 }
 :root{
       --bg-primary-dark: black;

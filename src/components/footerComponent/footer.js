@@ -24,19 +24,19 @@ export default function Footer() {
                                     <div>Subscribe to get updates!</div>
                                     <div>
                                           <div>Name*</div>
-                                          <input />
+                                          <input className={"form-control"} style={{outline:"none",backgroundColor:"transparent",color:"white",border:"1px solid grey"}}/>
                                     </div>
                                     <div>
                                           <div>Email*</div>
-                                          <input />
+                                          <input  className={"form-control"} style={{outline:"none",backgroundColor:"transparent",color:"white",border:"1px solid grey"}}/>
                                     </div>
-                                    <button>Subscribe</button>
+                                    <button className={"btn form-control btn-light"}>Subscribe</button>
                               </div>
                         </div>
-
+                        <hr />
                         <div className={styles.copyRightSection}>
-                              <hr />
-                              <div>Copy right c 2023 -----</div>
+
+                              <div style={{fontWeight:"bold"}}>Copy right c 2023 -----</div>
                               <div className={styles.powerContainer}>powered by: <nav className={styles.power}>REACT DEVS</nav></div>
 
                         </div>
