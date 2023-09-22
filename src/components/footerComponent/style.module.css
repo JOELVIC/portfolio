@@ -12,13 +12,14 @@
       display: flex;
       flex-wrap: wrap;
       align-items: start;
+      padding-left: 10vw;
 }
 
 .linkContainer{
-      margin: 1% 5% 7% 5%;
+      margin: 1vw 5vw 7vw 1vw;
 }
 .linkContainer > div{
-      margin: 10% auto;
+      margin: 10px auto;
 }
 .linkContainer > div >input{
       outline: none;
@@ -26,10 +27,15 @@
       background-color: var(--bg-primary);
       color: var(--color-secondary);
       border-radius: 4px;
+      margin-top: 4px;
 }
 .linkContainer > button{
       outline: none;
       padding: 6px;
+}
+.head{
+      font-size: 1.3em;
+      margin-bottom: 20px !important ;
 }
 /* ------- /link Section  */
 
@@ -43,12 +49,9 @@
       justify-content: center;
 }
 .copyRightSection hr{
-      width: 90%;
+      width: 83%;
       border: 1px solid var(--color-secondary);
       
-}
-.head{
-      font-size: 1.3em;
 }
 .powerContainer{
       display: flex;
@@ -63,3 +66,12 @@
 }
 
 /* -------- /copyRightSection */
+
+/* -- mobile */
+@media screen and (max-width:550px) {
+      
+.linkSection{
+      display: block;
+}
+      
+}

@@ -34,7 +34,7 @@ export default function Header() {
 
   const list = (anchor) => (
     <Box
-      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 350 }}
+      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 270 }}
       className={styles.dropdownContainer}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}

@@ -5,7 +5,78 @@ export default function Home() {
 
   return (
     <>
-      home component
+      <div>
+
+        home component
+      </div>
+      <div>
+
+        home component
+      </div>
+      <div>
+
+        home component
+      </div>
+      <div>
+
+        home component
+      </div>
+      <div>
+
+        home component
+      </div>
+    <div>
+
+    home component
+    </div>
+    <div>
+
+    home component
+    </div>
+    <div>
+
+    home component
+    </div>
+    <div>
+
+    home component
+    </div>
+    <div>
+
+    home component
+    </div>
+    <div>
+
+    home component
+    </div>
+    <div>
+
+    home component
+    </div>
+    <div>
+
+    home component
+    </div>
+    <div>
+
+    home component
+    </div>
+    <div>
+
+    home component
+    </div>
+    <div>
+
+    home component
+    </div>
+    <div>
+
+    home component
+    </div>
+    <div>
+
+    home component
+    </div>
     </>
   )
 }
