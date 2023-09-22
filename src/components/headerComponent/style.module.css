@@ -1,0 +1,92 @@
+.container {
+      color: var(--color-secondary);
+      background-color: var(--bg-primary);
+      position: sticky;
+      top: 0px;
+      height: 100px;
+      border-bottom: 1px solid;
+      display: flex;
+      align-items: center;
+      padding-left: 4%;
+      padding-right: 4%;
+      font-size: 1em;
+      font-weight: bold;
+}
+
+/* --logo */
+.logoContainer {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.logoContainer img {
+      width: 50px;
+      margin-left: 100%;
+}
+
+/* --/logo */
+
+/* -- toggle button  */
+.hambuger {
+      display: none;
+}
+
+/* -- /toggle button  */
+
+.linkContainer {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+
+}
+
+.linkContainer div {
+      margin: auto 1.5%;
+      cursor: pointer;
+}
+
+.linkContainer div:hover {
+      margin: auto 2%;
+      cursor: pointer;
+      color: var(--color-primary);
+}
+/* ----- dropdown */
+.dropdownContainer{
+      width: 100%;
+      height: 100%;
+      background-color: var(--bg-primary);
+      color: var(--color-primary);
+}
+.divider{
+      background-color: var(--color-secondary);
+
+}
+
+/* ----- /dropdown */
+
+
+
+
+/* --------- tablet ---------- */
+@media screen and (max-width: 750px) {
+
+      /* -- toggle button  */
+      .hambuger {
+            display: contents;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 5%;
+      }
+
+      /* -- /toggle button  */
+      .linkContainer {
+            display: none;
+      }
+
+}
+
+/* --------- mobile ---------- */
+@media screen and (max-width: 400px) {}

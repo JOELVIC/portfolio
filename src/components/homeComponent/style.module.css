@@ -1,0 +1,17 @@
+.container {
+      color: var(--color-secondary);
+      background-color: var(--bg-primary);
+      font-size: 1em;
+      font-weight: bold;
+}
+
+
+
+/* --------- tablet ---------- */
+@media screen and (max-width: 750px) {
+
+
+}
+
+/* --------- mobile ---------- */
+@media screen and (max-width: 400px) {}

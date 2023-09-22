@@ -1,0 +1,14 @@
+:root{
+      --bg-primary: black;
+      --bg-secondary: blue;
+      --color-primary: white;
+      --color-secondary: rgb(150, 148, 148);
+      --red: red;
+}
+:root{
+      --bg-primary-dark: black;
+      --bg-secondary-dark: blue;
+      --color-primary-dark: white;
+      --color-secondary-dark: rgb(150, 148, 148);
+      --red-dark: red;
+}
