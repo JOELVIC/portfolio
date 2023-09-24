@@ -4,6 +4,14 @@ import img from '../../assets/img/photo.jpg'
 import { Facebook, Instagram, Twitter } from "@mui/icons-material";
 
 export default function Home() {
+  React.useEffect(() => {
+    
+      window.scrollTo(0, 0)
+
+    return () => {
+
+    }
+  }, [])
 
   return (
     <>

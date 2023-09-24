@@ -1,0 +1,24 @@
+
+:root{
+      --img-bg-primary: rgba(148, 141, 141, 0.445);
+}
+.container{
+      width: 100%;
+      background-color: black;
+      border: 1px black solid;
+      /* padding: 4px; */
+}
+.headText{
+      text-align: center;
+      /* width: 100%; */
+      font-size: 3em;
+      margin: 4vw;
+}
+.albumContainer{
+      
+      /* padding: 10%; */
+      width: 80%;
+      /* background-color: var(--img-bg-primary); */
+      background-color: inherit;
+      margin: 20px auto 20px auto;
+}

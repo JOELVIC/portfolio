@@ -21,6 +21,10 @@
       align-items: center;
       justify-content: center;
 }
+.logoContainer a{
+      text-decoration: none;
+      color: inherit;
+}
 .logoContainer div{
       margin-left: 3vw;
       cursor: pointer;
@@ -51,6 +55,23 @@
       display: flex;
       justify-content: flex-end;
 
+}
+.linkContainer a{
+      text-decoration: none;
+      /* color: var(--color-secondary); */
+      color: inherit;
+}
+.linkContainer a:active{
+      text-decoration: none;
+      color: var(--color-primary);
+}
+.dropdownContainer a{
+      text-decoration: none;
+      color: var(--color-primary);
+}
+.dropdownContainer a:active{
+      text-decoration: none;
+      color: var(--color-secondary);
 }
 
 .linkContainer div {

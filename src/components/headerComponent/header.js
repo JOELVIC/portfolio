@@ -13,6 +13,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
 
@@ -32,7 +33,22 @@ export default function Header() {
     setState({ ...state, [anchor]: open });
   };
 
-  const list = (anchor) => (
+  // --- mobile dropdown list items
+  const ListItemS = ({ textP }) => {
+    return (
+      <div key={textP} text={textP}>
+        <Divider className={styles.divider} />
+        <ListItem disablePadding>
+          <ListItemButton>
+
+            <ListItemText primary={textP} />
+          </ListItemButton>
+        </ListItem>
+      </div>
+    )
+  }
+
+  const lists = (anchor) => (
     <Box
       sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 270 }}
       className={styles.dropdownContainer}
@@ -43,65 +59,79 @@ export default function Header() {
     >
       <Divider />
       <List>
-        {['Home ','Press', 'Gallery', 'Discography', 'About Me', 'Contact'].map((text, index) => (
+        {/* {['Home ','Press', 'Gallery', 'Discography', 'About Me', 'Contact'].map((text, index) => (
           <div key={text}>
         <Divider className={styles.divider}/>
           <ListItem disablePadding>
           <ListItemButton>
-            {/* <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon> */}
+            
             <ListItemText primary={text} />
           </ListItemButton>
         </ListItem>
           </div>
           
           
-        ))}
+        ))} */}
+        {/* ------ mobile dropdown */}
+        <NavLink  to={"/"}><ListItemS textP={"Home"} /></NavLink>
+        <ListItemS textP={"Press"} />
+        <NavLink  to={"/gallery"}><ListItemS textP={"Gallery"} /></NavLink>
+        {/* <ListItemS textP={"Gallery"} /> */}
+        <ListItemS textP={"Discography"} />
+        <ListItemS textP={"About Me"} />
+        <NavLink to={"/contact"}> <ListItemS textP={"Contact"} /> </NavLink>
+
+
         <Divider className={styles.divider} />
       </List>
     </Box>
   );
 
-  const SideBar = ()=>{
+  const SideBar = () => {
+    return (
+      <div>
+        {['left', 'right', 'top', 'bottom'].map((anchor) => (
+          <React.Fragment key={anchor}>
+            {/* <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button> */}
+            <Drawer
+              anchor={anchor}
+              open={state[anchor]}
+              onClose={toggleDrawer(anchor, false)}
+            >
+              {lists(anchor)}
+            </Drawer>
+          </React.Fragment>
+        ))}
+      </div>
+    )
+  }
+
+
   return (
-    <div>
-      {['left', 'right', 'top', 'bottom'].map((anchor) => (
-        <React.Fragment key={anchor}>
-          {/* <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button> */}
-          <Drawer
-            anchor={anchor}
-            open={state[anchor]}
-            onClose={toggleDrawer(anchor, false)}
-          >
-            {list(anchor)}
-          </Drawer>
-        </React.Fragment>
-      ))}
-    </div>
-  )}
+    <>
+    {/* <NavLink to={"/"}><div className={styles.logoContainer}>
+          <div>Weiser</div>
+        </div></NavLink> */}
+      <div className={styles.container}>
+        <div className={styles.logoContainer}>
+          <NavLink to={"/"}><div>Weiser</div></NavLink>
+          
+        </div>
+        <div className={styles.linkContainer}>
+          <div><NavLink to="/" >Home</NavLink></div>
+          <div>Press</div>
+          <div><NavLink to="/gallery" >Gallery</NavLink></div>
+          {/* <div>Gallery</div> */}
+          <div>Discography</div>
+          <div>About Me</div>
+          <div><NavLink to="/contact" >Contact</NavLink></div>
+        </div>
+        <div className={styles.hambuger} onClick={toggleDrawer("left", true)}>
+          <Menu style={{ fontSize: "2em" }} />
+        </div>
+        <SideBar />
+      </div>
 
-
-      return (
-            <>
-                  <div className={styles.container}>
-                        <div className={styles.logoContainer}>
-                              <div>Weiser</div>
-                        </div>
-                        <div className={styles.linkContainer}>
-                              <div>Home</div>
-                              <div>Press</div>
-                              <div>Gallery</div>
-                              <div>Discography</div>
-                              <div>About Me</div>
-                              <div>Contact</div>
-                        </div>
-                        <div className={styles.hambuger} onClick={toggleDrawer("left",true)}>
-                              <Menu style={{ fontSize: "2em" }} />
-                        </div>
-                        <SideBar />
-                  </div>
-
-            </>
-      )
+    </>
+  )
 }

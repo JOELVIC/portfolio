@@ -10,7 +10,7 @@ export default function Footer() {
                               <div className={styles.linkContainer}>
                                     <div className={styles.head}>Text Me!</div>
                                     <div>Whatsapp</div>
-                                    <div>+237888888888</div>
+                                    <div>+00491627418842</div>
                               </div>
                               <div className={styles.linkContainer}>
                                     <div className={styles.head}>Store</div>
