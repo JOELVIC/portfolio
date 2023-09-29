@@ -1,16 +1,21 @@
 :root{
       --bg-primary: #121212;
-      --bg-secondary: blue;
+      --bg-secondary: black;
       --color-primary: #626262;
       --color-secondary: rgb(150, 148, 148);
+      --color-tertiary: rgb(196, 120, 120);
+      --img-bg-primary: rgba(148, 141, 141, 0.445);
       --cyan: cyan;
+      --red: red;
+      --white: white;
+
 }
 :root{
       --bg-primary-dark: black;
       --bg-secondary-dark: blue;
       --color-primary-dark: white;
       --color-secondary-dark: rgb(150, 148, 148);
-      --red-dark: red;
+      --red-dark: rgb(157, 7, 7);
 }
 
 /* ----- template global styles */

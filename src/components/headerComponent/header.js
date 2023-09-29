@@ -78,7 +78,8 @@ export default function Header() {
         {/* <ListItemS textP={"Press"} /> */}
         <NavLink  to={"/gallery"}><ListItemS textP={"Gallery"} /></NavLink>
         {/* <ListItemS textP={"Gallery"} /> */}
-        <ListItemS textP={"Discography"} />
+        {/* <ListItemS textP={"Discography"} /> */}
+        <NavLink to={"/discography"}> <ListItemS textP={"Discography"} /> </NavLink>
         <ListItemS textP={"About Me"} />
         <NavLink to={"/contact"}> <ListItemS textP={"Contact"} /> </NavLink>
 
@@ -124,7 +125,8 @@ export default function Header() {
           {/* <div>Press</div> */}
           <div><NavLink to="/gallery" >Gallery</NavLink></div>
           {/* <div>Gallery</div> */}
-          <div>Discography</div>
+          {/* <div>Discography</div> */}
+          <div><NavLink to="/discography" >Discography</NavLink></div>
           <div>About Me</div>
           <div><NavLink to="/contact" >Contact</NavLink></div>
         </div>
