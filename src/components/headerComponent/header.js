@@ -74,7 +74,8 @@ export default function Header() {
         ))} */}
         {/* ------ mobile dropdown */}
         <NavLink  to={"/"}><ListItemS textP={"Home"} /></NavLink>
-        <ListItemS textP={"Press"} />
+        <NavLink  to={"/press"}><ListItemS textP={"Press"} /></NavLink>
+        {/* <ListItemS textP={"Press"} /> */}
         <NavLink  to={"/gallery"}><ListItemS textP={"Gallery"} /></NavLink>
         {/* <ListItemS textP={"Gallery"} /> */}
         <ListItemS textP={"Discography"} />
@@ -119,7 +120,8 @@ export default function Header() {
         </div>
         <div className={styles.linkContainer}>
           <div><NavLink to="/" >Home</NavLink></div>
-          <div>Press</div>
+          <div><NavLink to="/press" >Press</NavLink></div>
+          {/* <div>Press</div> */}
           <div><NavLink to="/gallery" >Gallery</NavLink></div>
           {/* <div>Gallery</div> */}
           <div>Discography</div>

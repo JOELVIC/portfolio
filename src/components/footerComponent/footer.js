@@ -13,7 +13,7 @@ export default function Footer() {
                                     <div>+00491627418842</div>
                               </div>
                               <div className={styles.linkContainer}>
-                                    <div className={styles.head}>Store</div>
+                                    <div className={styles.head+" cyan"}>Store</div>
                                     <div className={styles.power}>Shop</div>
                                     <div className={styles.power}>Account</div>
                                     <div className={styles.power}>order</div>
@@ -30,7 +30,7 @@ export default function Footer() {
                                           <div>Email*</div>
                                           <input  className={"form-control"} style={{outline:"none",backgroundColor:"transparent",color:"white",border:"1px solid grey"}}/>
                                     </div>
-                                    <button className={"btn form-control btn-light"}>Subscribe</button>
+                                    <button className={"btn form-control  btn-light bg-cyan"}>Subscribe</button>
                               </div>
                         </div>
                         <hr />

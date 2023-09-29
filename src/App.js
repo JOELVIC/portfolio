@@ -10,6 +10,8 @@ import "bootstrap/dist/css/bootstrap.css"
 import ScrollToTop from 'react-scroll-to-top';
 import { Contact } from './components/contactusComponent/Contact';
 import Gallery from './components/gallery/gallery';
+import { ContactPage } from './components/contactus/Contact';
+import { Press } from './components/card/Press';
 
 function App() {
  
@@ -20,6 +22,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/gallery' element={<Gallery />} />
+        <Route path='/press' element={<Press />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
       <ScrollToTop className="scrollToTopBtn" smooth />

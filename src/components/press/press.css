@@ -1,0 +1,22 @@
+
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    .main{
+
+        flex-direction: column;
+
+    }
+    .main img{
+        width: 100%;
+
+
+
+    }
+    .line{
+        width: 100%;
+
+    }
+
+}
+
+

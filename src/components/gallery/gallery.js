@@ -69,6 +69,16 @@ const photos = [
 export default function App() {
       // const [open, setOpen] = React.useState(false);
 
+    React.useEffect(() => {
+    
+      window.scrollTo(0, 0)
+
+    return () => {
+
+    }
+  }, [])
+
+
       const [index, setIndex] = React.useState(-1);
 
 

@@ -1,21 +1,10 @@
 
 import  "./Contactstyle.css";
-import React from "react";
 import ExploreRoundedIcon from '@mui/icons-material/ExploreRounded';
 import LocalPhoneRoundedIcon from '@mui/icons-material/LocalPhoneRounded';
 import {LocalPostOffice} from "@mui/icons-material";
 
-export const Contact =()=>{
-
-    React.useEffect(() => {
-    
-        window.scrollTo(0, 0)
-  
-      return () => {
-  
-      }
-    }, [])
-
+export const ContactPage =()=>{
     return(
         <>
         <section className="ftco-section" style={{backgroundColor:"black",color:"whitesmoke"}}>
@@ -38,8 +27,8 @@ export const Contact =()=>{
                                                     <ExploreRoundedIcon/>
                                                 </div>
                                                 <div className="text">
-                                                    <p><span>Address:</span> Beethovenstraße 25. 73463 Westhausen
-                                                        </p>
+                                                    <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY
+                                                        10016</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -49,7 +38,7 @@ export const Contact =()=>{
                                                    <LocalPhoneRoundedIcon/>
                                                 </div>
                                                 <div className="text">
-                                                    <p><span>Phone:</span> <a href="tel://1234567920">+00491627418842</a>
+                                                    <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a>
                                                     </p>
                                                 </div>
                                             </div>
@@ -61,7 +50,7 @@ export const Contact =()=>{
                                                 </div>
                                                 <div className="text">
                                                     <p><span>Email:</span> <a
-                                                        href="nbarmel@gmail.com">nbarmel@gmail.com</a></p>
+                                                        href="mailto:info@yoursite.com">info@yoursite.com</a></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -103,7 +92,7 @@ export const Contact =()=>{
                                                 <div className="col-md-12">
                                                     <div className="form-group">
                                                         <input type="submit" value="Send Message" className="btn btn-dark"
-                                                               style={{color:"cyan"}}/>
+                                                               style={{color:"darkgray"}}/>
                                                             <div className="submitting">
                                                                 <br/>
                                                             </div>

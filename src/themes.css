@@ -3,7 +3,7 @@
       --bg-secondary: blue;
       --color-primary: #626262;
       --color-secondary: rgb(150, 148, 148);
-      --red: #b6b6b6;
+      --cyan: cyan;
 }
 :root{
       --bg-primary-dark: black;
@@ -11,4 +11,12 @@
       --color-primary-dark: white;
       --color-secondary-dark: rgb(150, 148, 148);
       --red-dark: red;
+}
+
+/* ----- template global styles */
+.bg-cyan{
+      background-color: cyan !important;
+}
+.cyan{
+      color: cyan !important;
 }
